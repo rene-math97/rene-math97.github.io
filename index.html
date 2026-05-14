@@ -80,7 +80,6 @@
       <li><span class="now-tag">building</span> Agentic LLM systems at Tradeweb — MCP, custom hooks/skills, and curated knowledge bases over Snowflake and Kafka.</li>
       <li><span class="now-tag">studying</span> Number Theory and Numerical Methods at Columbia.</li>
       <li><span class="now-tag">writing</span> Drafting an independent behavioral finance writeup.</li>
-      <li><span class="now-tag">researching</span> Factor-driven Conditional Value-at-Risk (CVaR) portfolio optimization. Owning Phase 4: factor returns + backtesting. Full release in May 2026.</li>
       <li><span class="now-tag">training</span> Olympic weightlifting and MMA.</li>
       <li><span class="now-tag">tracking</span> Earnings season — semiconductors, cybersecurity, hyperscaler capex.</li>
     </ul>
@@ -140,12 +139,11 @@
     </article>
 
     <article class="entry">
-      <div class="entry-date">2026 · Spring</div>
-      <h3 class="entry-title">Factor-Driven CVaR Portfolio Optimization</h3>
-      <p class="entry-meta">Group project · final release May 2026</p>
+      <div class="entry-date">2026 · May</div>
+      <h3 class="entry-title"><a href="https://rene-math97.github.io/factor-driven-cvar-portfolio/" target="_blank" rel="noopener">Factor-Driven CVaR Portfolio Optimization for the US ETF Universe</a></h3>
+      <p class="entry-meta">Group project · Columbia GR5261 Statistical Methods in Finance · my contribution: Phase 4 (long-short factor returns, walk-forward backtest, Euler&ndash;Scaillet attribution) · <a href="https://github.com/rene-math97/factor-driven-cvar-portfolio" target="_blank" rel="noopener">repo</a></p>
       <p>
-        Applying Conditional Value-at-Risk optimization to factor-tilted portfolios. My contribution covers factor return
-        generation and out-of-sample backtesting comparing CVaR-optimized portfolios against mean-variance baselines.
+        End-to-end Mean-CVaR portfolio framework on a 29-ETF US multi-asset universe with 20+ years of monthly history. Four-factor style model (Carry, Value, Momentum, Quality), Hull&ndash;White volatility-scaled scenarios, a Rockafellar&ndash;Uryasev linear-programming optimizer, and a rolling 60-month walk-forward backtest of five competing allocation strategies. <strong>Headline finding</strong>: on a 205-month out-of-sample test block, MinVar dominates MinCVaR on both Sharpe (1.258 vs. 1.165) and max drawdown (&minus;5.13% vs. &minus;5.29%), and both CVaR-targeted strategies breach their own ex-ante CVaR<sub>0.95</sub> at 7.32% versus a nominal 5%. The mechanism is structural: ETF baskets smooth instrument-level tails, compressing the dispersion the CVaR objective exists to exploit.
       </p>
     </article>
   </section>
